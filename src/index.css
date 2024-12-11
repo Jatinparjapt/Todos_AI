@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  @keyframes bounceLeftToRight {
+    0%, 100% {
+      transform: translateX(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateX(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+  
+  .bounce-left-to-right {
+    animation: bounceLeftToRight 1s infinite;
+  }
+
+
+  .reverse-spin{
+
+      animation: spin 1s alternate-reverse infinite;
+  }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.reverse-spin-delete{
+    animation: dspin 1s alternate-reverse infinite;
+}
+@keyframes dspin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(150deg);
+    }
+  }
+
+
+  
